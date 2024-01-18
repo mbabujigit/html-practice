@@ -8,7 +8,9 @@
     <style>
         form {
             background-color: burlywood;
-            width: 500px;
+            border: 1px solid black;
+            padding: 10px 15px 10px 15px;
+            width: 400px;
             margin: auto;
         }
 
@@ -16,10 +18,12 @@
             text-align: center;
             margin-top: 0px;
         }
-        label{
+
+        .form-control {
             font-weight: bold;
             font-size: 15px;
             color: darkslateblue;
+            width: 100%;
         }
     </style>
 </head>
@@ -28,41 +32,41 @@
     <form>
         <h2>Registration Form</h2>
         <div>
-            <label for="fname">First name:</label>
+            <label for="fname">First name:</label> <br/>
             <input class="form-control" placeholder="Enter first name" type="text">
         </div>
         <div>
-            <label for="lname">Last name:</label>
+            <label for="lname">Last name:</label><br/>
             <input class="form-control" placeholder="Enter last name" type="text">
         </div>
         <div>
-            <label for="email">Email:</label>
-            <input placeholder="Enter email" type="email">
+            <label for="email">Email:</label><br/>
+            <input class="form-control" placeholder="Enter email" type="email">
         </div>
         <div>
-            <label for="password">Password:</label>
-            <input placeholder="Enter password" type="password">
+            <label for="password">Password:</label><br/>
+            <input class="form-control" placeholder="Enter password" type="password">
         </div>
         <div>
-            <label for="dob">D.O.B:</label>
+            <label for="dob">D.O.B:</label><br/>
             <input placeholder="Enter dob" type="date">
         </div>
         <div>
-            <label for="gender">Gender:</label>
+            <label for="gender">Gender:</label><br/>
 
             <input type="radio" name="gender" /> Male
             <input type="radio" name="gender" /> Female
             <input type="radio" name="gender" /> Other
         </div>
         <div>
-            <label for="hobbies">Hobbies:</label>
+            <label for="hobbies">Hobbies:</label><br/>
 
             <input type="checkbox" name="hobbies" /> Reading
             <input type="checkbox" name="hobbies" /> Writing
             <input type="checkbox" name="hobbies" /> Singing
         </div>
         <div>
-            <label for="country">Country:</label>
+            <label for="country">Country:</label><br/>
             <select>
                 <option value="India">India</option>
                 <option value="USA">USA</option>
@@ -70,20 +74,20 @@
             </select>
         </div>
         <div>
-            <label for="age">Age:</label>
-            <input placeholder="Enter age" type="number">
+            <label for="age">Age:</label><br/>
+            <input class="form-control" placeholder="Enter age" type="number">
         </div>
         <div>
-            <label for="website">Bio:</label>
-            <input placeholder="Enter website" type="url">
+            <label for="website">Bio:</label><br/>
+            <input class="form-control" placeholder="Enter website" type="url">
         </div>
         <div>
-            <label> File</label>
+            <label> File</label><br/>
             <input type="file" name="file" />
         </div>
         <div>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <label for="message">Message:</label><br/>
+            <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
         </div>
 
         <input type="submit" value="Submit">
