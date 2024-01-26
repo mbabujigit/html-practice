@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mobile {
+            width: 32%;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        p{
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media(max-width: 767px) {
+            .mobile {
+                background-color: red;
+                width: 49%;
+            }
+            h1{
+                font-size: 24px;
+            }
+            p{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .mobile {
+                background-color: blue;
+                width: 48%;
+            }
+
+        }
+
+        @media screen and (min-width: 1025px) {
+            .mobile {
+                background-color: green;
+            }
+
+        }
+        @media print{
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mobile</h1>
+    <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor maiores quidem error vitae atque sit facilis
+    doloremque ab laborum natus, eaque odio aperiam voluptatem ipsa dignissimos, tempore dolore fugiat!">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor maiores quidem error vitae atque sit facilis
+        doloremque ab laborum natus, eaque odio aperiam voluptatem ipsa dignissimos, tempore dolore fugiat!
+        >
+    <div class="flex-container">
+        <div class="mobile"></div>
+        <div class="mobile"></div>
+        <div class="mobile"></div>
+    </div>
+</body>
+
+</html>
